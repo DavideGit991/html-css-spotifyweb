@@ -10,6 +10,7 @@
   /* height: calc(100vh - ( 100px )); */
   display: flex;
 }
+
 .clearfix{
   content: "";
   display: table;
@@ -44,6 +45,11 @@ display: flex;
   background-color: #040404;
   display: flex;
 }
+.navbar-verticale{
+  display: flex;
+  flex-direction: column;
+
+}
 
 /* proprietà corpo pagina */
 .container-main{
@@ -58,21 +64,22 @@ display: flex;
   display: flex;
   justify-content: flex-end;
   height: 100px;
-  width: 100%;
+  width: 85%;
   background-color:#121212;
   filter: opacity(65%);
 }
 .btn-box{
   height: 100px;
+  width: 300px;
   /* background-color: white; */
-  width: 50%;
+  padding-right: 2%;
   line-height: 99px;
   text-align: right;
-  border: 1px solid white;
-
+  /* border: 1px solid white; */
   }
 
 .btn-upgrade{
+height: 50px;
 padding: 2% 3%;
 color: white;
 border-radius: 25px;
@@ -84,11 +91,7 @@ border: 1px solid white;
   background-color: #686565;
   display: flex;
 }
-.rimanenza{
-  width: 50%;
-  height: 100px;
-  color: green;
-}
+
 /* Proprietà responsive */
 
 /* XS MOBILE: */
@@ -104,6 +107,10 @@ border: 1px solid white;
   }
   .container-main{
   width: 90vw;
+  }
+  .navbar-login{
+    width: 90%;
+
   }
 }
 
