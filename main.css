@@ -10,13 +10,14 @@
   /* height: calc(100vh - ( 100px )); */
   display: flex;
 }
-
-.clearfix{
-  content: "";
-  display: table;
-  clear: both;
+img{
+  width: 100%;
+  height: auto;
 }
-/* footer{
+span{
+  color: #fff;
+}
+/*footer{
   height: 100px;
   border: solid 1px #000;
 }  */
@@ -56,6 +57,16 @@ flex-direction:column;
   border: 1px solid white;
   height: 100px;
   width: 100%;
+}
+.home-img, .search-img, .library-img{
+  line-height: 30px;
+}
+#logo{
+  width: 60%;
+}
+#logo-small{
+  width: 25px;
+  height: auto;
 }
 /* proprietà corpo pagina */
 .container-main{
