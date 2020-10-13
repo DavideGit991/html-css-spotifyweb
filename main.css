@@ -36,6 +36,7 @@ height: calc(100vh - ( 100px ));
 border: solid 1px #000;
 background-color: #040404;
 display: flex;
+flex-direction:column;
 }
 .container-xs-navbar{
   display:none;
@@ -44,13 +45,18 @@ display: flex;
   border: solid 1px #000;
   background-color: #040404;
   display: flex;
-}
-.navbar-verticale{
-  display: flex;
   flex-direction: column;
-
 }
-
+.up{
+  border: 1px solid white;
+  height: calc(100% - 100px);
+  width: 100%;
+}
+.down{
+  border: 1px solid white;
+  height: 100px;
+  width: 100%;
+}
 /* proprietà corpo pagina */
 .container-main{
 width: 85vw;
@@ -59,7 +65,7 @@ border: solid 1px #000;
 background-color: #030e37;
 display: flex;
 }
-.navbar-login{
+.navbar-upgrade{
   position: fixed;
   display: flex;
   justify-content: flex-end;
@@ -91,6 +97,7 @@ border: 1px solid white;
   background-color: #686565;
   display: flex;
 }
+
 
 /* Proprietà responsive */
 
