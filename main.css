@@ -1,0 +1,80 @@
+/* regole generali */
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ main{
+  /* height: calc(100vh - ( 100px )); */
+  display: flex;
+}
+
+/* footer{
+  height: 100px;
+  border: solid 1px #000;
+}  */
+
+
+
+/* regole debug */
+
+/* regole pagina */
+
+/* proprietà main */
+.container-xl-navbar{
+width: 15vw;
+height: calc(100vh - ( 100px ));
+border: solid 1px #000;
+background-color: #040404;
+display: flex;
+}
+.container-xs-navbar{
+  display:none;
+  width:10vw;
+  height: calc(100vh - ( 100px ));
+  border: solid 1px #000;
+  background-color: #040404;
+  display: flex;
+}
+
+.container-main{
+width: 85vw;
+height: calc(100vh - ( 100px ));
+border: solid 1px #000;
+background-color: #121212;
+display: flex;
+}
+
+.container-footer{
+  height: 100px;
+  background-color: #686565;
+  display: flex;
+}
+
+/* Proprietà responsive */
+
+/* XS MOBILE: */
+
+@media screen and (max-width: 576px){
+
+  .container-xl-navbar{
+    display: none;
+  }
+  .container-xs-navbar{
+    display: block;
+
+  }
+  .container-main{
+  width: 90vw;
+  }
+}
+@media screen and (min-width: 577px){
+
+
+  .container-xs-navbar{
+    display: none;
+
+  }
+  
+}
