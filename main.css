@@ -3,7 +3,7 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
  main{
@@ -19,6 +19,10 @@ span{
 }
 a{
   text-decoration: none;
+}
+h4{
+  color: gray;
+  font-size: 8px;
 }
 /*footer{
   height: 100px;
@@ -37,7 +41,7 @@ a{
 .container-xl-navbar{
 width: 250px;
 height: calc(100vh - ( 100px ));
-border: solid 1px #000;
+/* border: solid 1px #000; */
 background-color: #040404;
 display: flex;
 flex-direction:column;
@@ -46,7 +50,7 @@ flex-direction:column;
   display:none;
   width:10vw;
   height: calc(100vh - ( 100px ));
-  border: solid 1px #000;
+  /* border: solid 1px #000; */
   background-color: #040404;
   display: flex;
   flex-direction: column;
@@ -103,7 +107,7 @@ display: flex;
   position: fixed;
   display: flex;
   justify-content: flex-end;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   height: 100px;
   width: calc(100% - 250px);
   background-color:#121212;
@@ -136,27 +140,79 @@ ul.playlist li{
 
 /* proprieta navbar song */
 .container-song{
-  display:flex;
-  justify-content: center;
   margin-top: 100px;
   width: 100%;
-  height: calc(100vh - 100px );
+  height: calc(100vh - 200px );
   border: solid 1px #000;
+  overflow: auto;
 }
 .nav-song{
   width: 100%;
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .nav-song-items {
-  font-size: 5px;
-  padding: 0 1%;
-  color: white;
+  font-size: 8px;
+  padding: 0 1px;
   display: inline-block;
 }
+.nav-song-items a  {
+text-decoration: none;
+color: white;
+}
 
+/* proprietà contenitore img */
+.song-played{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+.title-played{
+  margin: 0 2%;
+  color: white;
+}
+.title-song,.subtitle-song{
+  margin: 5px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.subtitle-song{
+  font-size: 8px;
+  color: gray;
+}
+#img-played{
+  max-width: 200px;
+  max-height: auto;
+}
+.container-played,.container-playlist,.container-popular{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container-playlist-played{
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0;
+}
+.col{
+  margin: 0 2%;
+}
+.title-playlist, .subtitle-playlist{
+  margin: 0 2%;
+  color:white;
+}
+
+/* proprietà sezione artisti */
+#img-artist{
+  border-radius: 50% 50%;
+  max-width: 200px;
+  max-height: auto;
+}
 /* proprietà footer */
 .container-footer{
+  z-index: 999;
   width: 100%;
   height: 100px;
   background-color: #686565;
@@ -172,8 +228,8 @@ ul.playlist li{
   min-width: 40%;
   border: 1px solid white;
   line-height: 100px;
-
 }
+
 
 /* Proprietà responsive */
 
