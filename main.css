@@ -20,9 +20,17 @@ span{
 a{
   text-decoration: none;
 }
+h2{
+  font-size: 14px;
+}
 h4{
   color: gray;
   font-size: 8px;
+}
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
 }
 /*footer{
   height: 100px;
@@ -57,7 +65,7 @@ flex-direction:column;
 }
 .up{
   /* border: 1px solid white; */
-  height: calc(100% - 100px);
+  height: calc(100% - 50px);
   padding: 0 5px;
   width: 100%;
   display: flex;
@@ -65,7 +73,7 @@ flex-direction:column;
   }
 .down{
   /* border: 1px solid white; */
-  height: 100px;
+  height: 50px;
   padding: 0 5px;
   width: 100%;
   display: flex;
@@ -75,6 +83,7 @@ flex-direction:column;
 .playlist-box,.home-box,.logo{
   padding: 20px 2px;
 }
+
 .home-img, .search-img, .library-img{
   line-height: 30px;
 }
@@ -87,9 +96,16 @@ flex-direction:column;
   height: auto;
 }
 .name-playlist-box{
-  border: solid 1px white;
+  /* border: solid 1px white; */
+  margin-top: 10px;
+  height: 250px;
   overflow:auto;
 }
+ul.playlist li{
+  color: white;
+  padding: 6px 0;
+}
+
 .install-box{
   border: solid 1px white;
   min-height: 50px;
@@ -131,10 +147,6 @@ border-radius: 25px;
 border: 1px solid white;
 }
 
-ul.playlist li{
-  color: white;
-  padding: 2px 0;
-}
 
 /*proprieta corpo centrale  */
 
@@ -200,7 +212,7 @@ color: white;
   margin: 0 2%;
 }
 .title-playlist, .subtitle-playlist{
-  margin: 0 2%;
+  margin: 10px 2%;
   color:white;
 }
 
@@ -220,17 +232,39 @@ color: white;
   justify-content: space-between;
 }
 .col-left,.col-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid white;
+  min-width: 10%;
+  height: 100px;
+}
+.col-right{
+  display: flex;
+  align-items: center;
   border: 1px solid white;
   min-width: 20%;
-  line-height: 100px;
+  height: 100px;
+}
+#img-song-active{
+  max-width: 50px;
+  max-height: auto;
+}
+.name-song-active{
+  float: left;
 }
 .col-central{
   min-width: 40%;
   border: 1px solid white;
   line-height: 100px;
 }
-
-
+i{
+  color: white;
+}
+.hr{
+  border: 3px solid white;
+  width: 50%;
+}
 /* Proprietà responsive */
 
 /* XS MOBILE: */

@@ -2,3 +2,5 @@
 [1014/092236.958:ERROR:directory_reader_win.cc(43)] FindFirstFile: Impossibile trovare il percorso specificato. (0x3)
 [1014/111334.794:ERROR:directory_reader_win.cc(43)] FindFirstFile: Impossibile trovare il percorso specificato. (0x3)
 [1014/120900.754:ERROR:directory_reader_win.cc(43)] FindFirstFile: Impossibile trovare il percorso specificato. (0x3)
+[1014/142438.431:ERROR:directory_reader_win.cc(43)] FindFirstFile: Impossibile trovare il percorso specificato. (0x3)
+[1014/144228.348:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Davide\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\dfa1dbae-701d-446e-befe-65b0e6cb3ff7: Impossibile trovare il percorso specificato. (0x3)
