@@ -3,7 +3,7 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sora', sans-serif;
 }
 
  main{
@@ -60,9 +60,10 @@ h4{
   filter: opacity(50%);
   border-bottom: 2px solid lightgreen;
 }
-.navbar-upgrade a:hover{
+#btn-upgrade:hover {
   cursor: pointer;
   border-bottom: 2px solid lightgreen;
+  transform: scale(1.1);
 }
 .subtitle-playlist-box a:hover{
   cursor: pointer;
@@ -70,6 +71,10 @@ h4{
 }
 .subtitle-playlist-box a i:hover{
   color: lightgreen;
+}
+.playlist a li:hover {
+  cursor: pointer;
+  filter: opacity(50%);
 }
 #hover-install:hover{
   cursor: pointer;
@@ -112,8 +117,8 @@ h4{
   text-align: center;
 }
 .middle i{
-  color:#fff;
-  transform: scale(2.5)
+  color:lightgreen;
+  transform: scale(4)
 }
 .col:hover .middle{
   opacity: 1;
@@ -227,28 +232,30 @@ display: flex;
 }
 .navbar-upgrade{
   position: fixed;
+  top:0;
+  right: 0;
   display: flex;
   justify-content: flex-end;
   /* border: 1px solid white; */
   height: 100px;
   width: calc(100% - 180px);
   background-color:#121212;
-  filter: opacity(65%);
+  filter: opacity(35%);
 }
 .btn-box{
-  height: 100px;
   width: 300px;
   /* background-color: white; */
-  padding-right: 15px;
+  padding-right: 30px;
   line-height: 99px;
   text-align: right;
   /* border: 1px solid white; */
   }
 
-.btn-upgrade{
+#btn-upgrade{
+color: #fff;
 height: 50px;
-padding: 2% 3%;
-color: white;
+padding: 2% 8%;
+background-color: #121212;
 border-radius: 25px;
 border: 1px solid white;
 }
