@@ -86,18 +86,21 @@ h4{
 .rewind-box i:hover{
   cursor: pointer;
   filter: opacity(50%);
+  color: lightgreen;
 }
-.icon-box1 a:hover{
+.icon-box1 a:hover i{
+  cursor: pointer;
+  filter: opacity(50%);
+  color: lightgreen;
+}
+.name-song-active a:hover {
   cursor: pointer;
   filter: opacity(50%);
 }
-.name-song-active a:hover{
+.col-right a:hover i{
   cursor: pointer;
   filter: opacity(50%);
-}
-.col-right a:hover{
-  cursor: pointer;
-  filter: opacity(50%);
+  color: lightgreen;
 }
 .middle {
   opacity: 0;
@@ -267,8 +270,8 @@ border: 1px solid white;
   padding: 20px 0;
 }
 .nav-song-items {
-  font-size: 8px;
-  padding: 0 1px;
+  font-size: 14px;
+  padding: 0 2px;
   display: inline-block;
 }
 .nav-song-items a  {
@@ -416,6 +419,10 @@ i{
   .container-main{
   width: calc(100% - 40px);
   }
+  .nav-song-items {
+    font-size: 8px;
+    padding: 0 2px;
+  }
   .navbar-upgrade{
     width: calc(100% - 40px);;
   }
@@ -477,6 +484,10 @@ i{
   .col-left{
     width: 25%
   }
+  .nav-song-items {
+    font-size: 8px;
+    padding: 0 2px;
+  }
   .name-song-active h2{
     font-size: 12px;
   }
@@ -489,7 +500,7 @@ i{
   .col{
     width: 44%;
     height:auto;
-    margin: 0 3%;
+    margin: 10px 3%;
   }
   .icon-box1{
     display: flex;
@@ -499,10 +510,14 @@ i{
 }
 /* responsive md */
 @media screen and (min-width: 769px) and (max-width: 992px){
+  .nav-song-items {
+    font-size: 10px;
+    padding: 0 2px;
+  }
   .col{
     width: 20%;
     height:auto;
-    margin: 0 2%;
+    margin: 10px 2%;
   }
   .col-right{
     width: 30%
@@ -530,7 +545,7 @@ i{
   .col{
     width: 14%;
     height:auto;
-    margin: 0 1%;
+    margin: 10px 1%;
   }
   .col-right{
     max-width: 30%;
