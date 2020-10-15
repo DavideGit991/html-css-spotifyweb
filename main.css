@@ -72,6 +72,14 @@ h4{
   cursor: pointer;
   filter: opacity(50%);
 }
+#img-played:hover{
+  cursor: pointer;
+  filter: sepia(80%);
+}
+#img-artist:hover{
+  cursor: pointer;
+  filter: sepia(80%);
+}
 .rewind-box i:hover{
   cursor: pointer;
   filter: opacity(50%);
@@ -435,7 +443,7 @@ i{
 
 
 /* responsive s */
-@media screen and (max-width: 768px){
+@media screen and (min-width: 578px) and (max-width: 768px){
   .col-right,.col-central,.col-left{
     font-size: 50%;
   }
@@ -466,8 +474,7 @@ i{
   }
 }
 /* responsive md */
-@media screen and (max-width: 992px){
-
+@media screen and (min-width: 769px) and (max-width: 992px){
   .col{
     width: 20%;
     height:auto;
