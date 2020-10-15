@@ -25,6 +25,10 @@ h2{
   color:white;
   font-size: 20px;
 }
+h5{
+  color:white;
+
+}
 h4{
   color: gray;
   font-size: 8px;
@@ -69,6 +73,14 @@ h4{
   filter: opacity(50%);
 }
 .rewind-box i:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+}
+.icon-box1 a:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+}
+.name-song-active a:hover{
   cursor: pointer;
   filter: opacity(50%);
 }
@@ -302,7 +314,7 @@ color: white;
   align-items: center;
   justify-content: space-around;
   /* border: 1px solid white; */
-  min-width: 10%;
+  width: 20%;
   height: 100px;
 }
 .col-right{
@@ -316,6 +328,7 @@ color: white;
 .name-song-active{
   float: left;
 }
+
 .col-central{
   min-width: 40%;
   /* border: 1px solid white; */
@@ -392,8 +405,17 @@ i{
   .col-left{
     width: 20%
   }
+  .name-song-active h2{
+    font-size: 10px;
+  }
+  .name-song-active h4{
+    font-size: 7px;
+  }
+  .col-left img{
+    display: none;
+  }
   .col-central{
-    font-size: 60%;
+    font-size: 50%;
     width:40%;
   }
   .rewind-box{
@@ -413,7 +435,7 @@ i{
 
 
 /* responsive s */
-@media screen and (min-width: 577px) and (max-width: 768px){
+@media screen and (max-width: 768px){
   .col-right,.col-central,.col-left{
     font-size: 50%;
   }
@@ -421,19 +443,30 @@ i{
     width: 30%
   }
   .col-left{
-    width: 20%
+    width: 25%
+  }
+  .name-song-active h2{
+    font-size: 12px;
+  }
+  .name-song-active h4{
+    font-size: 8px;
   }
   .col-central{
-    width:50%;
+    width:45%;
   }
   .col{
     width: 44%;
     height:auto;
     margin: 0 3%;
   }
+  .icon-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 /* responsive md */
-@media screen and (min-width: 769px) and (max-width: 992px){
+@media screen and (max-width: 992px){
 
   .col{
     width: 20%;
@@ -446,6 +479,12 @@ i{
   .col-left{
     width: 20%
   }
+  .name-song-active h2{
+    font-size: 12px;
+  }
+  .name-song-active h4{
+    font-size: 8px;
+  }
   .col-central{
     width:50%;
   }
@@ -453,6 +492,10 @@ i{
 
 /* responsive lg*/
 @media screen and (min-width: 993px) {
+  #img-song-active{
+    max-width: 80px;
+    max-height: auto;
+  }
   .col{
     width: 14%;
     height:auto;
