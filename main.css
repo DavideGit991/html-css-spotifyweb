@@ -200,7 +200,7 @@ ul.playlist li{
 width: calc(100% - 180px);
 height: calc(100vh -  100px );
 border: solid 1px #000;
-background-color: #030e37;
+background-color: #1e213d;
 display: flex;
 }
 .navbar-upgrade{
@@ -352,7 +352,7 @@ i{
   height: 4px;
   background-color: #b3b3b3;
   border-radius: 10px;
-  width: 50%;
+  width: 40%;
 }
 .rewind-box, .timeline-box{
   display: flex;
@@ -374,7 +374,7 @@ i{
   height: 4px;
   background-color: #b3b3b3;
   border-radius: 10px;
-  width: 80%;
+  width: 65%;
 }
 .time-stay,.time-total{
   font-size: 10px;
