@@ -51,6 +51,10 @@ h4{
   filter: opacity(50%);
   border-bottom: 2px solid lightgreen;
 }
+.profilo-box-down a:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+}
 .nav-song a:hover{
   cursor: pointer;
   filter: opacity(50%);
@@ -180,7 +184,7 @@ ul.playlist li{
   flex-direction: column;
 }
 
-.profilo-box, .row-box a{
+.profilo-box,.profilo-box-down, .row-box a{
   margin: 10px 0;
   display: flex;
   align-items: center;
