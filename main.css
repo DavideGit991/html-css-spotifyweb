@@ -20,8 +20,10 @@ span{
 a{
   text-decoration: none;
 }
+
 h2{
-  font-size: 14px;
+  color:white;
+  font-size: 20px;
 }
 h4{
   color: gray;
@@ -32,15 +34,44 @@ h4{
   display: table;
   clear: both;
 }
-/*footer{
-  height: 100px;
-  border: solid 1px #000;
-}  */
 
 
 
-/* regole debug */
-
+/* regole filtri */
+#logo:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+}
+.home-box a:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+  border-bottom: 2px solid lightgreen;
+}
+.nav-song a:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+  border-bottom: 2px solid lightgreen;
+}
+.navbar-upgrade a:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+  border-bottom: 2px solid blue;
+}
+.subtitle-playlist-box a:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+}
+.subtitle-playlist-box a i:hover{
+  color: lightgreen;
+}
+#hover-install:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+}
+.rewind-box i:hover{
+  cursor: pointer;
+  filter: opacity(50%);
+}
 /* regole pagina */
 
 /* proprietà main */
@@ -70,6 +101,8 @@ flex-direction:column;
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-shrink: 1;
+
   }
 .down{
   /* border: 1px solid white; */
@@ -79,11 +112,20 @@ flex-direction:column;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  flex-shrink: 0;
+
 }
 .playlist-box,.home-box,.logo{
   padding: 20px 2px;
+  flex-shrink: 2;
 }
-
+.title-playlist-box{
+  margin-bottom: 20px;
+}
+.subtitle-playlist-box{
+  display: flex;
+  justify-content: space-around;
+}
 .home-img, .search-img, .library-img{
   line-height: 30px;
 }
@@ -100,6 +142,7 @@ flex-direction:column;
   margin-top: 10px;
   height: 250px;
   overflow:auto;
+  flex-shrink: 1;
 }
 ul.playlist li{
   color: white;
@@ -107,10 +150,27 @@ ul.playlist li{
 }
 
 .install-box{
-  border: solid 1px white;
+  /* border: solid 1px white; */
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
   min-height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+.profilo-box, .row-box a{
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hr-install{
+  height: 2px;
+  background-color:white;
+  margin: 5px 0;
+}
 /* proprietà corpo pagina */
 .container-main{
 width: calc(100% - 180px);
@@ -209,6 +269,9 @@ color: white;
   padding: 15px 0;
 }
 .col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 2%;
 }
 .title-playlist, .subtitle-playlist{
@@ -226,6 +289,7 @@ color: white;
 
 /* proprietà footer */
 .container-footer{
+  position: fixed;
   z-index: 999;
   width: 100%;
   height: 100px;
@@ -237,14 +301,11 @@ color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   min-width: 10%;
   height: 100px;
 }
 .col-right{
-  display: flex;
-  align-items: center;
-  border: 1px solid white;
   min-width: 20%;
   height: 100px;
 }
@@ -257,7 +318,7 @@ color: white;
 }
 .col-central{
   min-width: 40%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 i{
   color: #b3b3b3;
@@ -276,6 +337,9 @@ i{
 .rewind-box{
   width: 50%;
   margin: 20px auto;
+}
+.big{
+  transform: scale(2);
 }
 .timeline-box{
   width:80%;
@@ -322,8 +386,11 @@ i{
   .col-right,.col-left{
     font-size: 40%;
   }
-  .col-right,.col-left{
+  .col-right{
     width: 30%
+  }
+  .col-left{
+    width: 20%
   }
   .col-central{
     font-size: 60%;
@@ -350,6 +417,15 @@ i{
   .col-right,.col-central,.col-left{
     font-size: 50%;
   }
+  .col-right{
+    width: 30%
+  }
+  .col-left{
+    width: 20%
+  }
+  .col-central{
+    width:50%;
+  }
   .col{
     width: 44%;
     height:auto;
@@ -364,7 +440,15 @@ i{
     height:auto;
     margin: 0 2%;
   }
-
+  .col-right{
+    width: 30%
+  }
+  .col-left{
+    width: 20%
+  }
+  .col-central{
+    width:50%;
+  }
 }
 
 /* responsive lg*/
@@ -373,5 +457,14 @@ i{
     width: 14%;
     height:auto;
     margin: 0 1%;
+  }
+  .col-right{
+    max-width: 30%;
+  }
+  .col-left{
+    max-width: 20%;
+  }
+  .col-central{
+    width:50%;
   }
 }
